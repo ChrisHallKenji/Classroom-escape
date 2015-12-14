@@ -1,0 +1,53 @@
+<html>
+<head>
+<title> inc </title>
+<script src="Script/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+Pimage bloodprint; 
+
+
+
+
+void setup(){
+
+	size( 1000, 1000 );
+	frameRate( 30 );
+
+	bloodprint = loadImage("Images/bloodprint.png")
+
+}
+
+
+void draw()
+{ 
+
+background(0,0,0);
+
+image(bloodprint,0,0,700,700); 
+
+text(mouseX,700,20);
+text(mouseY,700,40);   
+
+if(mousePressed == true && mouseButton == LEFT) 
+{ 
+
+
+		if(mouseX > 224 && mouseX < 511 && mouseY > 56 && mouseY < 357) 
+		{
+			link("indexd.html") 
+		
+		}
+
+} 
+
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
+

@@ -1,0 +1,82 @@
+<html>
+<head>
+<title> indexb </title>
+<script src="Script/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+PImage classroomarrow; 
+PImage computera; 
+
+
+void setup()
+
+{
+
+	size( 1000, 1000 );
+	
+	frameRate( 30 );
+
+classroomarrow = loadImage("Images/classroomarrow.png");  
+
+	
+}
+
+
+void draw()
+{ 
+
+background(0,0,0); 
+
+
+image(classroomarrow,0,0,600,600);  
+
+text(mouseX,700,20);
+text(mouseY,700,40); 
+
+
+if(mousePressed == true && mouseButton == LEFT) 
+{ 
+
+
+		if(mouseX > 850 && mouseX < 950 && mouseY > 400 && mouseY < 500) 
+		{
+			link("inc.html") 
+		
+		}
+	
+
+		if(mouseX > 240 && mouseX < 260 && mouseY > 187 && mouseY < 271)  
+		
+		{ 
+			link("inc.html")
+		
+		}  
+		
+		if(mouseX > 327 && mouseX < 341 && mouseY > 155 && mouseY < 242) 
+		
+		{ 
+			link("indexe.html")	
+		} 
+		
+		if(mouseX > 430 && mouseX < 442 && mouseY > 158 && mouseY < 242) 
+		
+		{ 
+			link("indexe.html")
+		} 
+		
+
+	
+} 
+	
+ 
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
+

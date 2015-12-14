@@ -11,7 +11,6 @@ void setup()
 {
 
 	size( 1000, 1000 );
-	background(0,0,0);
 	frameRate( 30 );
 	
 	clickhere = loadImage("Images/clickhere.png"); 
@@ -23,6 +22,25 @@ void draw()
 
 {
 
+background(0,0,0); 
+
+// cyber 
+if(mousePressed == true && mouseButton == LEFT) 
+{ 
+
+
+		if(mouseX > 640 && mouseX < 677 && mouseY > 184 && mouseY < 197) 
+		{
+			link("indexf.html") 
+		
+		}
+
+
+
+}
+
+text(mouseX,700,20);
+text(mouseY,700,40);
 image(clickhere,825,350,90,30); 
 fill(255,0,0); 
 
@@ -47,15 +65,14 @@ rect(850,400,50,50);
 if(mouseX >850 && mouseX < 950 && mouseY > 400 && mouseY < 500 && mousePressed == true && mouseButton == LEFT)
 		{
 
-				link("index8b.html")
+				link("indexb.html")
 		}
  
 
 // line 
 
 stroke (255,0,0); 
-line (750,0,750,1000);
-
+line (750,0,750,1000); 
 
 
 

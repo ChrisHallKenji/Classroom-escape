@@ -1,0 +1,67 @@
+<html>
+<head>
+<title> indexd </title>
+<script src="Script/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas"> 
+
+Pimage hinthere;
+
+
+void setup(){
+
+size( 1000, 1000 );
+frameRate( 30 );
+
+
+hinthere = loadImage("Images/hinthere.png") 
+
+
+
+}
+
+
+void draw()
+{ 
+
+
+background(0,0,0);
+
+text(mouseX,700,20);
+text(mouseY,700,40); 
+
+text("sorry,try again",100,100);  
+text("-.-. -.-- -... . .-.",100,120);
+
+
+image(hinthere,300,300);   
+
+
+
+
+
+if(mousePressed == true && mouseButton == LEFT) 
+{ 
+
+
+		if(mouseX > 301 && mouseX < 855 && mouseY > 299 && mouseY < 481) 
+		{
+			link("indexa.html") 
+		
+		}
+
+	
+
+
+	
+}	
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+<html>
+<head>
+<title> indexe </title>
+<script src="Script/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+PImage computer; 
+
+void setup(){
+
+size( 1000, 1000 );
+background(0,0,0);
+frameRate( 30 );
+
+computer = loadImage("Images/computer.png");
+
+}
+
+
+void draw()
+{
+
+	image(computer,100,150); 
+	
+	if(mousePressed == true && mouseButton == LEFT) 
+{ 
+
+
+		if(mouseX > 0 && mouseX < 855 && mouseY > 0 && mouseY < 500) 
+		{
+			link("indexe.html") 
+		
+		}
+
+}
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+<html>
+<head>
+<title> indexf </title>
+<script src="Script/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+PImage gif; 
+
+void setup(){
+
+	size( 1000, 1000 );
+
+	frameRate( 30 ); 
+
+	gif = loadImage("Images/bully.gif");
+
+// need to use safari 
+
+} 
+
+		
+
+
+void draw()
+{	
+	background(0,0,0);
+	image(gif,200,200);  
+	
+
+  
+ 		if(mouseX >850 && mouseX < 950 && mouseY > 400 && mouseY < 500 && mousePressed == true && mouseButton == LEFT)
+		{
+
+				link("indexlast.html")
+		}
+
+
+	rect(850,400,50,50);  
+	fill(255,0,0);
+	
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
+
